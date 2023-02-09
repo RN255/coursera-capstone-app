@@ -1,9 +1,12 @@
 import React from "react";
+import Specials from "./Specials";
 
 export default function Main() {
   return (
     <>
-      <main>The main</main>
+      <main>
+        <Specials></Specials>
+      </main>
     </>
   );
 }
