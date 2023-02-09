@@ -1,13 +1,128 @@
+/* import text styles  */
+/* font-family: 'Markazi Text', serif;  */
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;700&display=swap");
+/* font-family: 'Karla', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* nav */
+
+nav {
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+  font-size: 24px;
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+nav img {
+  padding: 25px;
+}
+
+nav ul {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  list-style: none;
+}
+
+/* header  */
+header {
+  background-color: #495e57;
+  min-height: 300px;
+  margin-bottom: 50px;
+}
+
+#headerContainer {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 25px 0;
+}
+
+#headerContainer h1 {
+  color: #f4ce1495;
+  font-family: "Markazi Text", serif;
+  font-weight: 300;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+#headerContainer h2 {
+  padding: 0;
+  margin: 0;
+  font-family: "Markazi Text", serif;
+  color: #ffffff95;
+  font-weight: 100;
+}
+
+#headerContainer p {
+  width: 50%;
+  color: #ffffff;
+}
+
+#headerContainer button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f4ce14;
+  font-weight: 700;
+}
+
+#headerImgContainer {
+  position: relative;
+}
+
+header img {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 25px;
+  position: absolute;
+  width: 80%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* footer  */
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+footer ul {
+  list-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+  /* nav  */
+  nav ul {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  /* footer  */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
 }
