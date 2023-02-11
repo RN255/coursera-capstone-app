@@ -14,10 +14,18 @@ function Nav() {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>Menu</li>
-          <li>Reservations</li>
-          <li>Order Online</li>
-          <li>Login</li>
+          <li>
+            <Link to="/menu">Menu</Link>
+          </li>
+          <li>
+            <Link to="/reservations">Reservations</Link>
+          </li>
+          <li>
+            <Link to="/underConstruction">Order Online</Link>
+          </li>
+          <li>
+            <Link to="/underConstruction">Login</Link>
+          </li>
         </ul>
       </nav>
     </>
