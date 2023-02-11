@@ -208,6 +208,39 @@ header img {
   padding-right: 3px;
 }
 
+/* About  */
+
+#about {
+  padding: 50px 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#aboutImgContainer {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+#about img {
+  width: 200px;
+  height: 300px;
+}
+
+#MarioAdrianA {
+  padding-top: 100px;
+  object-fit: cover;
+  object-position: -200px;
+}
+
+#MarioAdrianB {
+  padding-bottom: 100px;
+  position: absolute;
+  object-fit: cover;
+  object-position: -200px;
+  left: 175px;
+}
+
 /* footer  */
 
 footer {
