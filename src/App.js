@@ -4,7 +4,7 @@ import Homepage from "./components/Homepage";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Specials from "./components/Specials";
-import Header from "./components/Header";
+import BookingPage from "./components/BookingPage";
 import UnderConstruction from "./components/UnderConstruction";
 
 import { Routes, Route, Link } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Specials />} />
-          <Route path="/reservations" element={<Header />} />
+          <Route path="/reservations" element={<BookingPage />} />
           <Route path="/underConstruction" element={<UnderConstruction />} />
         </Routes>
       </div>
