@@ -7,7 +7,7 @@ import Specials from "./components/Specials";
 import BookingPage from "./components/BookingPage";
 import UnderConstruction from "./components/UnderConstruction";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (

@@ -1,6 +1,4 @@
 import React from "react";
-import MarioAdrianA from "../assets/Mario-and-Adrian-A.jpg";
-import MarioAdrianB from "../assets/Mario-and-Adrian-b.jpg";
 
 export default function About() {
   return (

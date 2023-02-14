@@ -1,11 +1,18 @@
 import React from "react";
 import Logo from "../assets/Logo.svg";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useRef } from "react";
 
 function Nav() {
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
   return (
     <>
-      <nav>
+      <nav ref={navRef}>
         <img src={Logo} alt="logo"></img>
         <ul>
           <li>
@@ -27,7 +34,13 @@ function Nav() {
             <Link to="/underConstruction">Login</Link>
           </li>
         </ul>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
       </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
     </>
   );
 }

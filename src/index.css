@@ -41,6 +41,17 @@ nav ul {
   list-style: none;
 }
 
+.nav-btn {
+  background: transparent;
+  visibility: hidden;
+  opacity: 0;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
 /* header  */
 header {
   background-color: #495e57;
@@ -262,8 +273,37 @@ footer ul li:first-child {
 
 @media only screen and (max-width: 800px) {
   /* nav  */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #edefee;
+    z-index: 10;
+    transition: 0.5s;
+    transform: translateY(-100vh);
+  }
+
+  .responsive_nav {
+    transform: none;
+  }
+
   nav ul {
-    grid-template-columns: repeat(2, auto);
+    display: inline;
+  }
+
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 
   /* footer  */
