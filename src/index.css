@@ -282,6 +282,59 @@ footer ul li:first-child {
   font-weight: bold;
 }
 
+/* booking form  */
+form {
+  width: 70%;
+  padding: 5% 5%;
+  margin: auto;
+  background-color: #edefee;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+form label {
+  text-align: left;
+  display: inline-block;
+  width: 175px;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+form input {
+  width: 550px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+form select {
+  width: 570px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+form button {
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5% 0 0 25%;
+  color: #495e57;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
   /* nav  */
   nav {
@@ -378,5 +431,27 @@ footer ul li:first-child {
     width: 100%;
     padding: 0;
     margin-bottom: 25px;
+  }
+
+  /* booking form  */
+
+  form {
+    width: 85%;
+  }
+
+  form label {
+    width: 90%;
+  }
+
+  form input {
+    width: 90%;
+  }
+
+  form select {
+    width: 94%;
+  }
+
+  form button {
+    width: 50%;
   }
 }

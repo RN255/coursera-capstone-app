@@ -80,9 +80,9 @@ export default function BookingForm() {
             <option>Anniversary</option>
           </select>
         </div>
-        <button disabled={!name || !date} type="submit">
-          Submit
-        </button>
+          <button disabled={!name || !date} type="submit">
+            Submit
+          </button>
       </form>
     </>
   );
