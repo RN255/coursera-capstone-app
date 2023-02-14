@@ -10,13 +10,17 @@ export default function BookingForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setName("");
-    console.log("form submitted!");
-    console.log({ name });
-    console.log({ date });
-    console.log({ time });
-    console.log({ guests });
-    console.log({ occasion });
+    if (name === "") {
+      alert("Please fill in the form");
+    } else {
+      setName("");
+      console.log("form submitted!");
+      console.log({ name });
+      console.log({ date });
+      console.log({ time });
+      console.log({ guests });
+      console.log({ occasion });
+    }
   };
 
   return (
@@ -80,9 +84,7 @@ export default function BookingForm() {
             <option>Anniversary</option>
           </select>
         </div>
-          <button disabled={!name || !date} type="submit">
-            Submit
-          </button>
+        <button type="submit">Submit</button>
       </form>
     </>
   );
